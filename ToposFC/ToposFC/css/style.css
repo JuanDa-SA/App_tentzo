@@ -1,0 +1,244 @@
+:root {
+  /* --fuenteH: "Dosis", sans-serif;
+  --fuenteP: "Dosis", sans-serif; */
+  --azul: #3149B8;
+  --amarillo: #FCE5A5;
+  --verde: #4E9725;
+  --blanco: #ffffff;
+  --negro: #000000;
+  --morada: #6F418A;
+  --rojo: #ff0000;
+
+
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #f5f5f5;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb {
+  background: #FCE5A5;
+  border-radius: 50px;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  /* 1 rem = 10px */
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.contenedor {
+  width: min(90%, 120rem);
+  margin: 0 auto;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  background-color: #FCE5A5;
+}
+
+
+nav {
+  background-color: #3149B8
+}
+
+.nv {
+  display: flex;
+  justify-content: center;
+  flex-shrink: 1;
+}
+
+.nav-item>a {
+  font-optical-sizing: auto;
+  font-weight: 600;
+  color: #FFFF;
+  text-align: center;
+  font-size: 20px;
+  margin-right: 5vh;
+  position: relative;
+  transition: 0.3s;
+}
+
+.nav-links ul li a:hover{
+  color: white;
+  transform: scale(1.05);
+
+}
+.nav-links ul li a::after {
+  content: "";
+  position: absolute;
+  background-color: white;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: 3px;
+  transition: 0.3s;
+}
+
+.nav-links ul li a:hover::after {
+  width: 100%;
+}
+
+.boton {
+  display: inline-block;
+  font-family: var(--fuenteHeading);
+  color: var(--blanco);
+  text-align: center;
+  padding: 1rem 5rem;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  border: none;
+  border-radius: 1rem;
+  text-decoration: none;
+}
+.boton-tabla {
+  display: inline-block;
+  font-family: var(--fuenteHeading);
+  color: var(--blanco);
+  text-align: center;
+  padding: 1rem 2.5rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  border: none;
+  border-radius: 1rem;
+  text-decoration: none;
+}
+
+
+.boton--morado {
+  background-color: var(--morada);
+  border: 2px solid var(--morada);
+  box-sizing: border-box;
+  transition: 0.3s; 
+}
+
+.boton--morado:hover {
+  color: var(--morada);
+  cursor: pointer;
+  background-color: white;
+  border: 2px solid var(--morada);
+}
+
+.boton--rojo{
+  background-color: var(--rojo);
+  border: 2px solid var(--rojo);
+  box-sizing: border-box;
+  transition: 0.3s; 
+}
+
+.boton--rojo:hover {
+  color: var(--rojo);
+  cursor: pointer;
+  background-color: white;
+  border: 2px solid var(--rojo);
+}
+
+.boton--negro {
+  background-color: var(--negro);
+  border: 2px solid var(--negro);
+  box-sizing: border-box;
+  transition: 0.3s; 
+}
+
+.boton--negro:hover {
+  color: var(--negro);
+  cursor: pointer;
+  background-color: white;
+  border: 2px solid var(--negro);
+}
+
+.boton--azul {
+  background-color: var(--azul);
+  border: 2px solid var(--azul);
+  box-sizing: border-box;
+  transition: 0.3s; 
+}
+
+.boton--azul:hover {
+  color: var(--azul);
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid var(--azul);
+}
+
+.boton--verde {
+  background-color: var(--verde);
+}
+.boton--rojo{
+  background-color: var(--rojo);
+}
+
+h2 {
+  font-size: 3.6rem;
+}
+
+h3 {
+  font-size: 2.1rem;
+}
+
+p {
+  font-size: 2rem;
+}
+
+.input-label {
+  font-size: 2rem;
+}
+
+.input-form {
+  display: block;
+  width: 100%;
+  padding: .375rem .75rem;
+  border-radius: 1.5rem;
+  border: 0.5px solid var(--negro);
+  font-size: 1.5rem;
+  appearance: auto;
+}
+
+.entrada {
+  margin: 2.5rem 0;
+}
+
+.nota {
+  margin-top: 5rem;
+}
+
+.n-equipos{
+  font-size: 2em;
+}
+/* Añade margen entre los elementos */
+.div-botones > * {
+  margin-right: 10px; /* Ajusta el valor de margen según tus necesidades */
+}
+
+/* Elimina el margen del último elemento para evitar espacios adicionales */
+.div-botones > *:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 768px) {
+  .div-botones {
+    display: flex;
+    flex-direction: column; /* Cambia la dirección del flex a vertical */
+    flex-wrap: wrap;
+  }
+}

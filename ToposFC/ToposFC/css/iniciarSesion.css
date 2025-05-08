@@ -1,0 +1,73 @@
+body {
+    font-family: "Sono", sans-serif;
+    font-size: 20px;
+    background-color: #dbdbdb;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f5f5f5;
+    border-radius: 50px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #FCE5A5;
+    border-radius: 50px;
+  }
+.contenedor-principal {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.items {
+    background-image: url("./../img/Group 13.svg");
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 500px;
+    width: 30%;
+    height: 88%;
+    border-radius: 10%;
+    padding: 5%;
+}
+
+@media(max-width: 587px) {
+    .items {
+        min-width: 100px;
+        width: 90%;
+        max-height: 500px;
+    }
+}
+
+button {
+    background-color: darkblue;
+    color: white;
+    font-weight: bolder;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    width: 170px;
+}
+
+.items img {
+    width: 150px;
+    height: 150px;
+}
+
+.input li {
+    width: 200px;
+    margin: 50px 0;
+    /* This adds 10px of space above and below each list item */
+    /* border-bottom: 2px solid #9c9c9c; */
+    list-style-type: none;
+    text-align: center;
+    color: #9c9c9c;
+}
